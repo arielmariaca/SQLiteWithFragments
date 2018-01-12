@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ariel.app05.fragment.fra_insertar">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/mas_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre Mascota"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/mas_genero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/generos">
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/mas_raza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/razas"> <!-- para cargar el arreglo en el spinner-->
+        </Spinner>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/mas_peso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Peso"
+                android:inputType="numberDecimal"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_plus1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_margin="8dp"
+            android:src="@drawable/plus1" />
+
+    </LinearLayout>
+
+</FrameLayout>
